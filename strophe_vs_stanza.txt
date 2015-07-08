@@ -1,0 +1,132 @@
+Strophe standard
+
+BOSH (XEP 124 and XEP 206)
+WebSockets (RFC 7395)
+
+Strophe plugins
+
+Data Forms (XEP 0004)
+Jabber-RPC (XEP 0009)
+Service Discovery (XEP 0030)
+Multi-User Chat (XEP 0045)
+Bookmarks (XEP 0048)
+Private XML Storage (XEP 0049)
+Ad-Hoc Commands (XEP 0050)
+vcard-temp (XEP 0054)
+Result Set Management (XEP 0059)
+Publish-Subscribe (XEP 0060)
+Out of Band Data (XEP 0066)
+Jabber Object Access Protocol (XEP 0075) - missing in stanza
+In-Band Registration (XEP 0077)
+Chat State Notifications (XEP 0085)
+Entity Capabilities (XEP 0115)
+Message Archiving (XEP 0136) - missing in stanza
+Personal Eventing Protocol (XEP 0163)
+Message Delivery Receipts (XEP 0184)
+XMPP Ping (XEP 0199)
+Roster Versioning (XEP 0237) - missing in stanza
+Message Archive Management (XEP 0313)
+In-Band Bytestreams (XEP 0047) - missing in stanza
+SI File Transfer (XEP 0096) - missing in stanza
+
+Stanza
+
+XEP-0004: Data Forms
+XEP-0030: Service Discovery
+XEP-0045: Multi-User Chat
+XEP-0048: Bookmarks
+
+Using private XML storage.
+
+XEP-0049: Private XML Storage
+
+XEP-0050: Ad-Hoc Commands
+
+Partial support, for discovering available commands.
+
+XEP-0054: vcard-temp
+
+Partial support, for the most common vCard fields.
+
+XEP-0059: Result Set Management
+
+XEP-0060: Publish-Subscribe
+XEP-0066: Out of Band Data
+XEP-0077: In-Band Registration
+
+Support for registering/unregistering with services, and retrieving/updating your XMPP account information. Does NOT support in-band registration for new XMPP accounts.
+
+XEP-0080: User Location
+
+XEP-0082: XMPP Date and Time Profiles
+XEP-0084: User Avatar
+XEP-0085: Chat State Notifications
+XEP-0092: Software Version
+XEP-0106: JID Escaping
+XEP-0107: User Mood
+XEP-0115: Entity Capabilities
+XEP-0118: User Tune
+XEP-0122: Data Forms Validation
+XEP-0124: Bidirectional-streams Over Synchronous HTTP (BOSH)
+XEP-0128: Service Discovery Extensions
+XEP-0131: Stanza Headers and Internet Metadata
+XEP-0141: Data Forms Layout
+XEP-0152: Reachability Addresses
+XEP-0153: vCard-Based Avatars
+
+Read only support. Use XEP-0084 instead for setting user avatars.
+
+XEP-0156: Discovering Alternative XMPP Connection Methods
+
+Support for the HTTP discovery method.
+
+XEP-0163: Personal Eventing Protocol
+
+XEP-0166: Jingle
+XEP-0167: Jingle RTP Sesssions
+XEP-0172: User Nickname
+XEP-0176: Jingle ICE-UDP Transport Method
+XEP-0184: Message Delivery Receipts
+XEP-0186: Invisible Command
+XEP-0191: Blocking Command
+XEP-0198: Stream Management
+XEP-0199: XMPP Ping
+XEP-0202: Entity Time
+XEP-0203: Delayed Delivery
+XEP-0206: XMPP Over BOSH
+XEP-0215: External Service Discovery
+XEP-0221: Data Forms Media Element
+XEP-0224: Attention
+XEP-0231: Bits of Binary
+
+Support for requesting bits. Responding to requests for bits is left to the application using stanza.io by listening to the iq:get:bob event.
+
+XEP-0234: Jingle File Transfer
+
+XEP-0249: Direct MUC Invitations
+XEP-0264: File Transfer Thumbnails
+XEP-0276: Presence Decloaking
+XEP-0280: Message Carbons
+XEP-0293: Jingle RTP Feedback Negotiation
+XEP-0294: Jingle RTP Header Extensions Negotiation
+XEP-0297: Stanza Forwarding
+XEP-0300: Use of Cryptographic Hash Functions in XMPP
+XEP-0301: In-Band Real Time Text
+
+Support for the RTT protocol only. Processing the RTT information for UI display is left to the user & other modules such as rtt-buffer.
+
+XEP-0307: Unique Room Names for Multi-User Chat
+
+XEP-0308: Last Message Correction
+XEP-0310: Presence State Annotations
+XEP-0313: Message Archive Management
+XEP-0317: Hats
+XEP-0319: Last User Interaction in Presence
+XEP-0320: Use of DTLS-SRTP in Jingle Sessions
+XEP-0328: JID Prep
+XEP-0335: JSON Containers
+XEP-0337: Event Logging over XMPP
+XEP-0338: Jingle Grouping Framework
+XEP-0339: Source-Specific Media Attributes in Jingle
+XEP-0343: Use of DTLS/SCTP in Jingle ICE-UDP
+XEP-0352: Client State Indication
