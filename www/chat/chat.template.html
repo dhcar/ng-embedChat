@@ -1,0 +1,44 @@
+<div class="mdl-grid">
+
+  <div class="mdl-cell mdl-cell--2-col">
+  	Nav
+  </div>
+
+  <div class="mdl-cell mdl-cell--7-col">
+
+  	<div class="messages" id="chat_container">
+		<div ng-repeat="item in messages" embed-watch="messages">
+			<strong>{{item.sender}}</strong>
+			<p ng-bind-html="item.text | parseUrl" oembed>
+			</p>
+		</div>
+	</div>
+
+	<div id="chat_input_container" class="mdl-grid">
+		<!-- Floating Multiline Textfield -->
+
+		<form action="javascript:;" name="messageForm" id="message_form">
+
+		  <div class="mdl-textfield mdl-js-textfield" style="width: 170px;">
+    		<input class="mdl-textfield__input" type="text" id="sample1" name="sender" ng-model="message.sender" ng-minlength="1" required placeholder="name"/>
+    		<!-- <label class="mdl-textfield__label" for="sample1">Name</label> -->
+  		  </div>
+
+		  <div class="mdl-textfield mdl-js-textfield">
+		    <textarea class="mdl-textfield__input" type="text" rows= "2" id="sample5" name="text" ng-model="message.text" ng-minlength="1" required placeholder="message"></textarea>
+		    <!-- <label class="mdl-textfield__label" for="sample5">Message</label> -->
+		  </div>
+
+		  <button ng-click="sendMessage()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" ng-class="{ 'mdl-button--accent' : messageForm.$valid }">Send</button>
+
+		</form>
+		
+	</div>
+
+  </div>
+
+  <div class="mdl-cell mdl-cell--3-col">
+  	userlist & all dat
+  </div>
+
+</div>
