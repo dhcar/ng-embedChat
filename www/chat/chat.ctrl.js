@@ -1,6 +1,8 @@
 angular.module('embedChat')
 
-.controller('ChatCtrl', function($scope){
+.controller('ChatCtrl', function($scope, $rootScope){
+
+	console.log('CHAT CTRL');
 
 	$scope.chat = "hello world";
 
@@ -10,6 +12,8 @@ angular.module('embedChat')
 			'text': 'These are messages'
 		}
 	];
+
+	// $rootScope.classes = ['AMS 120A', 'BIO 20B', 'LIT 7'];
 
 	$scope.message = {
 		sender: 'Broseph Stalin',
@@ -22,6 +26,22 @@ angular.module('embedChat')
 			sender: $scope.message.sender
 		};
 	};
+
+	$scope.files = [
+		{	
+			'title':'File_bro.png',
+			'type': 'image',
+			'thumbnail': 'someUrl',
+			'date': 'someTimestamp'
+		},
+		{
+			'title':'Not_pr0n.avi',
+			'type': 'video',
+			'thumbnail': 'someOtherUrl',
+			'date': 'someTimestamp'
+		}
+
+	];
 
 	// var XMPP = require('stanza.io'); // if using browserify
 	// var client = XMPP.createClient({

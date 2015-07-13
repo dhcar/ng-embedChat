@@ -35,13 +35,14 @@
     <script src="common/filters.js"></script>
     <script src="common/services.js"></script>
     <script src="common/tlds.service.js"></script>
+    <script src="common/nav.ctrl.js"></script>
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="lib/oembed-jq-all/jquery.oembed.js"></script>
 
     <script src="lib/material-design-lite/material.min.js"></script>
 
-    <script src="lib/stanzaio/stanzaio.bundle.js"></script>
+    <!-- // <script src="lib/stanzaio/stanzaio.bundle.js"></script> -->
 
   </head>
 
@@ -50,11 +51,17 @@
 
 <!-- The drawer is always open in large screens. The header is always shown,
   even in small screens. -->
-<!-- <div class="demo-layout">
+
+<div>
+  
+</div>
+
+<div class="demo-layout">
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
               mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
+
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
@@ -69,49 +76,60 @@
         </div>
       </div>
     </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
+
+    <div class="mdl-layout__drawer nav-gutter-gray" ng-controller="NavCtrl">
+
+      <span class="mdl-layout-title" id="dagm8_title_container">DagM8</span>
+
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+      
+        <strong>Dags</strong>
+        <a class="mdl-navigation__link" href="" ng-repeat="class in classes">{{class}}</a>
+
       </nav>
+
+      <br>
+
+      <nav class="mdl-navigation">
+
+        <strong>Dags</strong>
+        <a class="mdl-navigation__link" href="" ng-repeat="dag in dags">{{dag}}</a>
+
+      </nav>
+    
+      <br>
+
+      <a href="/#">LINKS</a>
+      <a href="/#">FILES</a>
+      <a href="/#">TOPICS</a>
+      <a href="/#">FAVORITES</a>
+
     </div>
+
     <main class="mdl-layout__content">
       <div class="page-content">
-        <div ui-view></div>
+        <div ui-view="">
+        </div>
       </div>
     </main>
+
   </div>
-</div> -->
+</div>
 
   
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">DagM8</span>
-        <div class="mdl-layout-spacer"></div>
-<!--         <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav> -->
-      </div>
-    </header>
-
+ <!--    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">DagM8</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+  
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Title</span>
-<!--         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav> -->
       </div>
-
+  
       <main class="mdl-layout__content">
         <div class="page-content">
   
@@ -119,8 +137,8 @@
       
         </div>
       </main>
-    
-    </div>
+      
+    </div> -->
   </body>
 
 </html>

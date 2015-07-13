@@ -24,11 +24,16 @@ angular.module('embedChat', ['angularMoment', 'ui.router', 'ngSanitize'])
   // })
 
   // Each tab has its own nav history stack:
+  .state('nav', {
+    // abstract: true,
+    controller: 'NavCtrl'
+  })
 
   .state('chat', {
       url: '/chat',
-      templateUrl: 'chat/chat.template.html',
-      controller: 'ChatCtrl'
+      controller: 'ChatCtrl',
+      templateUrl: 'chat/chat.template.html'
+      // parent: 'app'
   });
 
   // if none of the above states are matched, use this as the fallback

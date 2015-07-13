@@ -22,3 +22,17 @@
 	height: calc(100vh - 95px);
 	overflow-y: scroll;
 }
+
+.nav-gutter-gray{
+	background-color: rgb(42,44,53) !important;
+	color           : white !important;
+	border-right    : 0px !important;
+}
+
+.files-container{
+
+}
+
+#dagm8_title_container{
+	background-color: rgb(34,37,43);
+}
