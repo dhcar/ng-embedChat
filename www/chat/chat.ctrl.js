@@ -24,31 +24,31 @@ angular.module('embedChat')
 	};
 
 	// var XMPP = require('stanza.io'); // if using browserify
-	var client = XMPP.createClient({
-	    jid: 'dh@example.com',
-	    password: 'pass',
-	    // If you have a .well-known/host-meta.json file for your
-	    // domain, the connection transport config can be skipped.
-	    transport: 'websocket',
-	    wsURL: 'wss://localhost:5269'
-	    // (or `boshURL` if using 'bosh' as the transport)
-	});
+	// var client = XMPP.createClient({
+	//     jid: 'dh@example.com',
+	//     password: 'pass',
+	//     // If you have a .well-known/host-meta.json file for your
+	//     // domain, the connection transport config can be skipped.
+	//     transport: 'websocket',
+	//     wsURL: 'wss://localhost:5269'
+	//     // (or `boshURL` if using 'bosh' as the transport)
+	// });
 
-	console.log(client);
+	// console.log(client);
 	
-	client.on('session:started', function () {
-	    client.getRoster();
-	    client.sendPresence();
-	});
+	// client.on('session:started', function () {
+	//     client.getRoster();
+	//     client.sendPresence();
+	// });
 	
-	client.on('chat', function (msg) {
-	    client.sendMessage({
-	      to: msg.from,
-	      body: 'You sent: ' + msg.body
-	    });
-	});
+	// client.on('chat', function (msg) {
+	//     client.sendMessage({
+	//       to: msg.from,
+	//       body: 'You sent: ' + msg.body
+	//     });
+	// });
 	
-	client.connect();
+	// client.connect();
 
 	// TODO - abstract this to a directive
 	// directive would watch ng-repeat as messages came in and change
