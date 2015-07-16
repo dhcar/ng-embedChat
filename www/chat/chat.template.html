@@ -2,7 +2,7 @@
 
 <div class="conversation__middle">
 
-  	<div class="messages" id="chat_container">
+  	<div class="messages" id="chat_container" style="">
 		<div ng-repeat="item in messages" embed-watch="messages">
 			<strong>{{item.sender}}</strong>
 			<p ng-bind-html="item.text | parseUrl" oembed>
@@ -15,7 +15,7 @@
 
 		<form action="javascript:;" name="messageForm" id="message_form">
 
-		  <div class="mdl-textfield mdl-js-textfield" style="width: 170px;">
+		  <div class="mdl-textfield mdl-js-textfield" style="width: 170px; display:none;">
 			<input class="mdl-textfield__input" type="text" id="sample1" name="sender" ng-model="message.sender" ng-minlength="1" required placeholder="name"/>
 			<!-- <label class="mdl-textfield__label" for="sample1">Name</label> -->
 			  </div>

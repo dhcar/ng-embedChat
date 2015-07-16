@@ -1,5 +1,9 @@
 /* Empty. Add your own CSS if you like */
 
+body{
+	overflow: hidden;
+}
+
 #chat_input_container textarea{
 	border: none;
 	display: inline;
@@ -31,6 +35,10 @@
 	background-color: rgb(34,37,43);
 }
 
+.page-content{
+	overflow: hidden;
+}
+
 .conversation{
 	display: flex;
 }
@@ -57,4 +65,5 @@
 	border-top: 1px solid rgba(0, 0, 0, .12);
 	height: 50px;
 	overflow: hidden;
+	box-sizing:border-box;
 }
