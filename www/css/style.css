@@ -1,13 +1,7 @@
 /* Empty. Add your own CSS if you like */
-#chat_input_container{
-	width: 58.33vw;
-	position: fixed;
-	bottom: 0%;
-	background-color: rgba(255,255,255,0.95);
-}
 
 #chat_input_container textarea{
-	border: 1px solid rgb(200,200,200);
+	border: none;
 	display: inline;
   	padding: none !important;
   	bottom: -23px;
@@ -35,4 +29,32 @@
 
 #dagm8_title_container{
 	background-color: rgb(34,37,43);
+}
+
+.conversation{
+	display: flex;
+}
+
+.conversation__middle{
+  -webkit-flex: 2 0 0;
+  flex-basis: 0;
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+
+.conversation__right{
+	-webkit-flex: 0 2 50%;
+	background-color: #fff;
+	border-left: 1px solid rgba(0, 0, 0, .12);
+	flex-basis: 30%;
+	flex-grow: 0;
+	flex-shrink: 3;
+	max-width: 420px;
+	min-width: 280px;
+}
+
+.compose{
+	border-top: 1px solid rgba(0, 0, 0, .12);
+	height: 50px;
+	overflow: hidden;
 }

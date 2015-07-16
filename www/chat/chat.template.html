@@ -1,6 +1,6 @@
-<div class="mdl-grid">
+<div class="conversation">
 
-  <div class="mdl-cell mdl-cell--9-col">
+<div class="conversation__middle">
 
   	<div class="messages" id="chat_container">
 		<div ng-repeat="item in messages" embed-watch="messages">
@@ -10,15 +10,15 @@
 		</div>
 	</div>
 
-	<div id="chat_input_container" class="mdl-grid">
+	<div id="chat_input_container" class="compose">
 		<!-- Floating Multiline Textfield -->
 
 		<form action="javascript:;" name="messageForm" id="message_form">
 
 		  <div class="mdl-textfield mdl-js-textfield" style="width: 170px;">
-    		<input class="mdl-textfield__input" type="text" id="sample1" name="sender" ng-model="message.sender" ng-minlength="1" required placeholder="name"/>
-    		<!-- <label class="mdl-textfield__label" for="sample1">Name</label> -->
-  		  </div>
+			<input class="mdl-textfield__input" type="text" id="sample1" name="sender" ng-model="message.sender" ng-minlength="1" required placeholder="name"/>
+			<!-- <label class="mdl-textfield__label" for="sample1">Name</label> -->
+			  </div>
 
 		  <div class="mdl-textfield mdl-js-textfield">
 		    <textarea class="mdl-textfield__input" type="text" rows= "2" id="sample5" name="text" ng-model="message.text" ng-minlength="1" required placeholder="message"></textarea>
@@ -31,10 +31,10 @@
 		
 	</div>
 
-  </div>
+</div>
 
-  <div class="mdl-cell mdl-cell--3-col">
-  	
-  </div>
+<div class="conversation__right">
+	Asideeee
+</div>
 
 </div>
