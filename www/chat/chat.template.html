@@ -34,7 +34,27 @@
 </div>
 
 <div class="conversation__right">
-	Asideeee
+	<div ng-repeat="file in files">
+		<img ng-src="{{file.thumbnail}}" alt="">
+		<i class="icon" ng-class="{'ion-play':file.type == 'video', 'ion-image': file.type == 'image'}"></i>
+		<span ng-bind="file.title"></span>
+		{{file.timestamp}}
+		<div class="asset-buttons">
+			<button class="">			
+				<i class="icon ion-star"></i>
+			</button>
+			<button>			
+				<i class="icon ion-alert"></i>
+			</button>
+			<button>			
+				<i class="icon ion-share"></i>
+			</button>
+			<button>
+				<i class="icon ion-chatbox"></i>			
+			</button>
+		</div>
+		<hr>
+	</div>
 </div>
 
 </div>
