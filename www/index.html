@@ -6,14 +6,13 @@
     <title>Embed Chat</title>
 
     <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="lib/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.deep_purple-orange.min.css" /> 
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-
     <link href="lib/oembed-jq-all/jquery.oembed.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -61,7 +60,7 @@
               mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-
+    <span class="docs-layout-title mdl-layout-title">Class</span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
@@ -83,7 +82,7 @@
 
       <nav class="mdl-navigation">
       
-        <strong>Dags</strong>
+         <span><i class="material-icons">class</i>Classes</span>
         <a class="mdl-navigation__link" href="" ng-repeat="class in classes">{{class}}</a>
 
       </nav>
@@ -92,7 +91,7 @@
 
       <nav class="mdl-navigation">
 
-        <strong>Dags</strong>
+         <span><i class="material-icons">question_answer</i>D.a.g's</span>
         <a class="mdl-navigation__link" href="" ng-repeat="dag in dags">{{dag}}</a>
 
       </nav>
