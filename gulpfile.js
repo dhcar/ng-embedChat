@@ -1,20 +1,20 @@
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var bower = require('bower');
-var concat = require('gulp-concat');
-var sass = require('gulp-sass');
+var gulp      = require('gulp');
+var gutil     = require('gulp-util');
+var bower     = require('bower');
+var concat    = require('gulp-concat');
+var sass      = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
-var rename = require('gulp-rename');
-var sh = require('shelljs');
+var rename    = require('gulp-rename');
+var sh        = require('shelljs');
 
 var paths = {
-  sass: ['./scss/**/*.scss']
+  sass: ['./www/css/style.scss']
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['watchSass']);
 
 gulp.task('sass', function(done) {
-  gulp.src('./scss/ionic.app.scss')
+  gulp.src('./www/css/style.scss')
     .pipe(sass({
       errLogToConsole: true
     }))
@@ -27,7 +27,7 @@ gulp.task('sass', function(done) {
     .on('end', done);
 });
 
-gulp.task('watch', function() {
+gulp.task('watchSass', function() {
   gulp.watch(paths.sass, ['sass']);
 });
 
