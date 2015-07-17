@@ -15,15 +15,15 @@
 
 		<form action="javascript:;" name="messageForm" id="message_form">
 
-		  <div class="mdl-textfield mdl-js-textfield temporal-user">
-			<input class="mdl-textfield__input temporal-user__input" type="text" id="sample1" name="sender" ng-model="message.sender" ng-minlength="1" required placeholder="name"/>
-			<!-- <label class="mdl-textfield__label" for="sample1">Name</label> -->
-			  </div>
-
 		  <div class="mdl-textfield mdl-js-textfield composer">
 		    <textarea class="mdl-textfield__input" type="text" rows= "1" id="sample5" name="text" ng-model="message.text" ng-minlength="1" required placeholder="Post a message…"></textarea>
 		    <!-- <label class="mdl-textfield__label" for="sample5">Message</label> -->
 		  </div>
+
+		  <div class="mdl-textfield mdl-js-textfield temporal-user">
+			<input class="mdl-textfield__input temporal-user__input" type="text" id="sample1" name="sender" ng-model="message.sender" ng-minlength="1" required placeholder="name"/>
+			<!-- <label class="mdl-textfield__label" for="sample1">Name</label> -->
+			  </div>
 
 		  <button ng-click="sendMessage()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect temporal-send" ng-class="{ 'mdl-button--accent' : messageForm.$valid }">Send</button>
 

@@ -117,3 +117,19 @@ body{
 	top:5px;
 	right:0;
 }
+
+.nav__title{
+	font-family: Verdana;
+	font-size: 13px;
+	color: rgba(255,255,255,0.70);
+	line-height: 20px;
+	text-transform: uppercase;
+	i{
+	color: rgba(255,255,255,1);
+	  font-size: 16px;
+	  padding: 0 8px 0 26px;
+	  height: 16px;
+	  position: relative;
+	  top: 2px;
+	}
+}
