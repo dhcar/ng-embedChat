@@ -59,20 +59,21 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
   .message__item author {
     margin: 0 0 5px 0;
-    font-family: Raleway-Bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.87);
     line-height: 20px; }
   .message__item p {
     margin: 0;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.54);
     line-height: 22px; }
 
 .composer {
   width: 100%;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.26);
   line-height: 20px; }
