@@ -8,13 +8,13 @@ var rename    = require('gulp-rename');
 var sh        = require('shelljs');
 
 var paths = {
-  sass: ['./www/css/style.css']
+  sass: ['./www/css/style.scss']
 };
 
 gulp.task('default', ['sass']);
 
 gulp.task('sass', function(done) {
-  gulp.src('./css/style.scss')
+  gulp.src('./www/css/style.scss')
     .pipe(sass({
       errLogToConsole: true
     }))

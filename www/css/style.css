@@ -15,7 +15,8 @@ body {
   background-color: #22252b; }
 
 .page-content {
-  overflow: hidden; }
+  overflow: hidden;
+  height: 400px; }
 
 .conversation {
   display: flex; }
@@ -93,5 +94,3 @@ body {
   position: absolute;
   top: 5px;
   right: 0; }
-
-/*# sourceMappingURL=style.css.map */
