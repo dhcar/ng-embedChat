@@ -3,7 +3,7 @@ body {
   overflow: hidden; }
 
 #chat_container {
-  height: calc(100vh - 95px);
+  height: calc(100vh - 114px);
   overflow-y: scroll; }
 
 .nav-gutter-gray {
@@ -16,7 +16,9 @@ body {
 
 .page-content {
   overflow: hidden;
-  height: 400px; }
+  height: calc(100vh - 64px); }
+  .page-content > div {
+    height: inherit; }
 
 .conversation {
   display: flex; }

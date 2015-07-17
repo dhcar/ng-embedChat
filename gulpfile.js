@@ -11,7 +11,7 @@ var paths = {
   sass: ['./www/css/style.scss']
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['watchSass']);
 
 gulp.task('sass', function(done) {
   gulp.src('./www/css/style.scss')
@@ -27,7 +27,7 @@ gulp.task('sass', function(done) {
     .on('end', done);
 });
 
-gulp.task('watch', function() {
+gulp.task('watchSass', function() {
   gulp.watch(paths.sass, ['sass']);
 });
 
