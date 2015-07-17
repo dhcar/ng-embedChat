@@ -3,8 +3,8 @@
 <div class="conversation__middle">
 
   	<div class="messages" id="chat_container" style="">
-		<div ng-repeat="item in messages" embed-watch="messages">
-			<strong>{{item.sender}}</strong>
+		<div ng-repeat="item in messages" embed-watch="messages" class="message__item">
+			<author>{{item.sender}}</author>
 			<p ng-bind-html="item.text | parseUrl" oembed>
 			</p>
 		</div>
@@ -20,12 +20,12 @@
 			<!-- <label class="mdl-textfield__label" for="sample1">Name</label> -->
 			  </div>
 
-		  <div class="mdl-textfield mdl-js-textfield">
-		    <textarea class="mdl-textfield__input" type="text" rows= "2" id="sample5" name="text" ng-model="message.text" ng-minlength="1" required placeholder="message"></textarea>
+		  <div class="mdl-textfield mdl-js-textfield composer">
+		    <textarea class="mdl-textfield__input" type="text" rows= "1" id="sample5" name="text" ng-model="message.text" ng-minlength="1" required placeholder="message"></textarea>
 		    <!-- <label class="mdl-textfield__label" for="sample5">Message</label> -->
 		  </div>
 
-		  <button ng-click="sendMessage()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" ng-class="{ 'mdl-button--accent' : messageForm.$valid }">Send</button>
+		  <button ng-click="sendMessage()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect temporal-send" ng-class="{ 'mdl-button--accent' : messageForm.$valid }">Send</button>
 
 		</form>
 		

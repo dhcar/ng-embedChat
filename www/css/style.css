@@ -1,69 +1,90 @@
 /* Empty. Add your own CSS if you like */
+body {
+  overflow: hidden; }
 
-body{
-	overflow: hidden;
-}
+#chat_input_container textarea {
+  border: none;
+  display: inline;
+  padding: none !important;
+  bottom: -23px;
+  position: absolute; }
 
-#chat_input_container textarea{
-	border: none;
-	display: inline;
-  	padding: none !important;
-  	bottom: -23px;
-  	position: absolute;
-}
+#chat_input_container input {
+  border: 1px solid #c8c8c8; }
 
-#chat_input_container input{
-	border: 1px solid rgb(200,200,200);
-}
+#chat_container {
+  height: calc(100vh - 95px);
+  overflow-y: scroll; }
 
-#chat_container{
-	height: calc(100vh - 95px);
-	overflow-y: scroll;
-}
+.nav-gutter-gray {
+  background-color: #2a2c35 !important;
+  color: white !important;
+  border-right: 0px !important; }
 
-.nav-gutter-gray{
-	background-color: rgb(42,44,53) !important;
-	color           : white !important;
-	border-right    : 0px !important;
-}
+#dagm8_title_container {
+  background-color: #22252b; }
 
-.files-container{
+.page-content {
+  overflow: hidden; }
 
-}
+.conversation {
+  display: flex; }
 
-#dagm8_title_container{
-	background-color: rgb(34,37,43);
-}
-
-.page-content{
-	overflow: hidden;
-}
-
-.conversation{
-	display: flex;
-}
-
-.conversation__middle{
+.conversation__middle {
   -webkit-flex: 2 0 0;
   flex-basis: 0;
   flex-grow: 2;
-  flex-shrink: 0;
-}
+  flex-shrink: 0; }
 
-.conversation__right{
-	-webkit-flex: 0 2 50%;
-	background-color: #fff;
-	border-left: 1px solid rgba(0, 0, 0, .12);
-	flex-basis: 30%;
-	flex-grow: 0;
-	flex-shrink: 3;
-	max-width: 420px;
-	min-width: 280px;
-}
+.conversation__right {
+  -webkit-flex: 0 2 50%;
+  background-color: #fff;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 3;
+  max-width: 420px;
+  min-width: 280px; }
 
-.compose{
-	border-top: 1px solid rgba(0, 0, 0, .12);
-	height: 50px;
-	overflow: hidden;
-	box-sizing:border-box;
-}
+.compose {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  height: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative; }
+
+.message__item {
+  padding: 20px 0px;
+  margin: 0 40px 0 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  .message__item author {
+    margin: 0 0 5px 0;
+    font-family: Raleway-Bold;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 20px; }
+  .message__item p {
+    margin: 0;
+    font-family: OpenSans;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 22px; }
+
+.composer {
+  width: 100%;
+  font-family: OpenSans;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.26);
+  line-height: 20px; }
+  .composer textarea {
+    resize: none; }
+    .composer textarea:active {
+      border: none;
+      box-shadow: none; }
+
+.temporal-send {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+/*# sourceMappingURL=style.css.map */
