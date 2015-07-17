@@ -44,16 +44,36 @@ angular.module('embedChat')
 	];
 
 	// var XMPP = require('stanza.io'); // if using browserify
+	// var client = XMPP.createClient({
+	//     jid: 'anon@anon.lance.im',
+	//     transport: 'websocket',
+	//     wsURL: 'wss://lance.im:5281/xmpp-websocket'
+	//     // (or `boshURL` if using 'bosh' as the transport)
+	// });
+
+	// console.log(client);
+	
+	// client.on('session:started', function () {
+	//     client.getRoster();
+	//     client.sendPresence();
+	//     window.alert('wss xmpp success');
+	//     client.disconnect();
+	// });
+	
+	// client.connect();
+
 	var client = XMPP.createClient({
-	    jid: 'anon@anon.lance.im',
-	    transport: 'websocket',
-	    wsURL: 'wss://lance.im:5281/xmpp-websocket'
+	    jid: 'user@localhost',
+	    transport: 'bosh',
+	    // wsURL: 'wss://lance.im:5281/xmpp-websocket'
+	    boshURL: 'http://192.168.99.100:5222'
 	    // (or `boshURL` if using 'bosh' as the transport)
 	});
 
 	console.log(client);
 	
 	client.on('session:started', function () {
+		console.log(client);
 	    client.getRoster();
 	    client.sendPresence();
 	    window.alert('wss xmpp success');
