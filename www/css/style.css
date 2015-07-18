@@ -96,7 +96,6 @@ body {
   position: absolute;
   top: 5px;
   right: 0; }
-<<<<<<< HEAD
 
 .nav__title {
   font-family: Verdana;
@@ -112,6 +111,30 @@ body {
     position: relative;
     top: 2px; }
 
+.oembedall-container {
+  display: block; }
+  .oembedall-container img {
+    float: right;
+    margin-left: 15px;
+    position: relative;
+    max-width: 120px;
+    height: auto;
+    padding: 0; }
+  .oembedall-container p {
+    padding-left: 20px;
+    border-left: 4px solid rgba(0, 0, 0, 0.06);
+    margin-top: 5px; }
+    .oembedall-container p:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both; }
+  .oembedall-container b {
+    margin: 0 0 5px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 20px; }
+
 /*# sourceMappingURL=style.css.map */
-=======
->>>>>>> origin/master
